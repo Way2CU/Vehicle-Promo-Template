@@ -6,14 +6,11 @@
  * Authors:
  */
 
-.theme('regular') {
-	@color_text: #333333;
-	@color_background: white;
-}
-
-.theme('reverse') {
-	@color_text: white;
-	@color_background: #333333;
+.theme('default') {
+	@color_white: #fff;
+	@color_text: fade(@color_white, 40%);
+	@color_black: #000;
+	@color_text_shadow: 1px 1px fade(@color_white, 40%);
 }
 
 // mixin used for publishing selected theme name
