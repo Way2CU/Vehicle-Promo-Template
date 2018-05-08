@@ -1,0 +1,69 @@
+/**
+ * Footer Mobile Style Sheet
+ * Vehicles-Promo-Template
+ *
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Anusic Vladimir
+ */
+
+footer {
+
+	div#vehicle_stats {
+		box-sizing: border-box;
+		display: block;
+		background-color: @color_white;
+		padding: 0.5rem 1rem;
+
+		a {
+			text-decoration: none;
+			color: @color_black;
+			display: block;
+			margin: 1rem 0;
+
+			&:hover,
+			&:focus,
+			&:active {
+				color: @color_button_effects;
+			}
+		}
+
+		article {
+			display: block;
+
+			table {
+				display: inline-block;
+				width: 45%;
+				vertical-align: middle;
+
+				thead,
+				tbody {
+					display: inline-block;
+					width: 48%;
+					vertical-align: middle;
+				}
+
+				tbody > tr > td{
+					border: 1px solid @color_form_background;
+					border-collapse: collapse;
+					padding: 0.5rem;
+					width: 50%;
+				}
+			}
+		}
+	}
+
+	div.copyright {
+		display: block;
+		width: 100%;
+		background-color: @color_black;
+		color: @color_white;
+		text-align: center;
+		background-position: calc(~'50% - 130px') center;
+		padding: 1em 0;
+
+		a:active {
+			color: @color_form_background;
+			transition: all 0.3s;
+		}
+	}
+}

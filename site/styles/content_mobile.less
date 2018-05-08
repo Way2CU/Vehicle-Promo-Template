@@ -19,3 +19,78 @@ section#info {
 		background-color: @color_black;
 	}
 }
+
+section#contact {
+	background-color: @color_form_background;
+	color: @color_white;
+
+	form {
+		display: block;
+		padding: 2rem 1rem;
+
+		label {
+			display: block;
+			width: 100%;
+			margin-bottom: 1.5rem;
+
+			span {
+				display: block;
+				width: 100%;
+				margin-bottom: 0.5rem;
+			}
+
+			input,
+			select {
+				padding: 0.5rem 0.5rem;
+				width: 95%;
+				background-color: @color_form_background;
+				border: 0;
+				border-bottom: 1px solid @color_white;
+
+			}
+
+			&.checkbox {
+				span {
+					display: inline-block;
+					width: 75%;
+					vertical-align: middle;
+				}
+
+				input {
+					display: inline-block;
+					width: 20%;
+					vertical-align: middle;
+				}
+			}
+		}
+
+		div.controls {
+			button {
+				display: block;
+				margin: 0 auto;
+				width: 95%;
+				padding: 0.3rem 0;
+
+				&:focus,
+				&:active {
+					background-color: @color_button_effects;
+					color: @color_white;
+					border: 0;
+					padding: 0.5rem 1rem;
+				}
+			}
+		}
+	}
+
+	figure.logo {
+		display: block;
+		margin: 1rem auto;
+		width: 12rem;
+		height: 12rem;
+
+		background-image: url(@logo);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+}

@@ -15,23 +15,26 @@
 @mask: 'none';
 
 // load theme
-.theme('default');
+.theme('dim_light_blue');
 
 // @import 'header.less';
 @import 'content.less';
-// @import 'footer.less';
+@import 'footer.less';
+@import (css) 'stock/copyright.css';
 
 body {
 	background-color: @color_background;
 	color: @color_text;
-	font-family: generic;
+	font-family: 'roboto-regular';
+	width: 100%;
+	height: 100vh;
 }
 
 input,
 select,
 textarea,
 button {
-	font-family: generic;
+	font-family: 'roboto-regular';
 }
 
 h1,

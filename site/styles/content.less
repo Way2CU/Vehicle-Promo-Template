@@ -8,10 +8,12 @@
 
 section#info {
 	position: relative;
+	box-sizing: border-box;
 	width: 70%;
 	display: inline-block;
-	height: 85vh;
+	height: 79vh;
 	background-color: @color_black;
+	vertical-align: top;
 
 	> img {
 		width: 100%;
@@ -24,9 +26,8 @@ section#info {
 		left: 70%;
 		top: 50%;
 		transform: translate(-50%, -50%);
-		width: 300px;
+		width: 240px;
 		color: @color_white;
-		text-shadow: @color_text_shadow;
 
 		html[dir=rtl] & {
 			left: none;
@@ -37,5 +38,86 @@ section#info {
 		h1 > span {
 			color: @color_text;
 		}
+	}
+}
+
+section#contact {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 30%;
+	height: 79vh;
+	background-color: @color_form_background;
+	vertical-align: top;
+
+	form {
+		display: block;
+		padding: 4rem 2rem;
+		color: @color_white;
+
+		label {
+			display: block;
+			margin-bottom: 1.5rem;
+
+			span {
+				display: inline-block;
+				width: 18%;
+				vertical-align: middle;
+				margin-right: 0.5rem;
+
+				html[dir=rtl] & {
+					margin-right: 0;
+					margin-left: 0.5rem;
+				}
+			}
+
+			input,
+			select {
+				display: inline-block;
+				width: 78%;
+				background-color: @color_form_background;
+				border: 0;
+				border-bottom: 1px solid @color_white;
+			}
+
+			&.checkbox {
+				span {
+					width: 75%;
+				}
+
+				input {
+					width: 20%;
+				}
+			}
+		}
+
+		div.controls {
+			button {
+				display: block;
+				margin: 0 auto;
+				width: 100%;
+				padding: 0.3rem 0;
+
+				&:hover,
+				&:focus,
+				&:active {
+					background-color: @color_button_effects;
+					color: @color_white;
+					border: 0;
+					padding: 0.5rem 1rem;
+				}
+			}
+		}
+	}
+
+	figure.logo {
+		display: block;
+		margin: 1rem auto;
+		width: 12rem;
+		height: 12rem;
+
+		background-image: url(@logo);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
 	}
 }

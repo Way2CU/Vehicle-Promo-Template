@@ -5,5 +5,7 @@
 	"variant_article_side_image": "Image on the side",
 	"variant_article_floating_image": "Floating image",
 	"variant_article_background_image": "Background image",
-	"variant_contact_form_generic": "Generic"
+	"variant_contact_form_generic": "Generic",
+	"copyright_holder": "Developed by <a href=\"http://way2cu.com\" target=\"_blank\">Way2CU</a>",
+    "copyright_text": "All rights reserved."
 }
