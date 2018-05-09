@@ -1,27 +1,58 @@
 <svg width="360" height="500" viewbox="0 0 360 500" xmlns="http://www.w3.org/2000/svg">
-	<!-- Header -->
-	<g>
-		<rect
-			class="preview-fill-header"
-			x="0" y="0"
-			width="360" height="50"
-			/>
-		<circle
-			class="preview-fill-background"
-			cx="25" cy="25" r="20"
-			/>
-	</g>
-
-	<!-- Content -->
-	<g>
-	</g>
-
-	<!-- Footer -->
-	<g>
-		<rect
-			class="preview-fill-footer"
-			x="0" y="480"
-			width="360" height="20"
-			/>
-	</g>
+    <defs>
+        <style type="text/css">
+            @font-face {
+              font-family: "roboto-regular";
+              src: url('site/images/fonts/Roboto-Regular.ttf') format('truetype');
+            }
+        </style>
+    </defs>
+    <!-- section info -->
+  	<g>
+        <rect height="400" width="252" x="0" y="0" class="preview-fill-color_black"/>
+        <text class="preview-fill-color_white" style="stroke: none; font-size: 18px; font-family: roboto-regular;" x="110" y="105">Main title for</text>
+        <text class="preview-fill-color_white" style="stroke: none; font-size: 18px; font-family: roboto-regular;" x="110" y="125">info page</text>
+        <text class="preview-fill-color_white" style="stroke: none; font-size: 10px; font-family: roboto-regular;" x="110" y="140">Some text for info page</text>
+        <text class="preview-fill-color_white" style="stroke: none; font-size: 10px; font-family: roboto-regular;" x="110" y="155">Some text for info page</text>
+        <text class="preview-fill-color_white" style="stroke: none; font-size: 10px; font-family: roboto-regular;" x="110" y="170">Some text for info page</text>
+        <text class="preview-fill-color_white" style="stroke: none; font-size: 10px; font-family: roboto-regular;" x="110" y="185">Some text for info page</text>
+        <text class="preview-fill-color_white" style="stroke: none; font-size: 10px; font-family: roboto-regular;" x="110" y="200">Some text for info page</text>
+  	</g>
+    <!-- section contact -->
+  	<g>
+        <rect height="400" width="108" x="252" y="0" class="preview-fill-color_form_background"/>
+        <text class="preview-fill-color_white" style="stroke: none; font-size: 10px; font-family: roboto-regular;">
+    			<tspan x="260" y="70">Name:</tspan>
+    			<tspan x="260" y="90">Phone:</tspan>
+    			<tspan x="260" y="110">Email:</tspan>
+            	<tspan x="260" y="130">City:</tspan>
+        </text>
+        <line class="preview-stroke-color_white" x1="300" y1="70" x2="350" y2="70" style="stroke-width: 1"/>
+        <line class="preview-stroke-color_white" x1="300" y1="90" x2="350" y2="90" style="stroke-width: 1"/>
+        <line class="preview-stroke-color_white" x1="300" y1="110" x2="350" y2="110" style="stroke-width: 1"/>
+        <polygon points="346 125 344 122 348 122" class="preview-stroke-color_white preview-fill-color_white"/>
+        <line class="preview-stroke-color_white" x1="300" y1="130" x2="350" y2="130" style="stroke-width: 1"/>
+        <rect height="12" width="90" x="260" y="150" class="preview-fill-color_white"/>
+        <text class="preview-fill-color_black" style="stroke: none;font-size: 10px; font-family: roboto-regular;" x="292" y="160">Send</text>
+        <circle cx="305" cy="245" r="20" class="preview-fill-color_white"/>
+    	<image class="preview-logo-image" height="11" width="11" x="305" y="245"/>
+  	</g>
+    <!-- footer -->
+  	<g>
+        <rect height="50" width="360" x="0" y="400" class="preview-fill-color_white"/>
+        <text class="preview-fill-color_black" style="stroke: none;font-size: 10px; font-family: roboto-regular;" x="150" y="420">Fuell usage</text>
+        <rect width="12" height="12" class="preview-fill-color_white preview-stroke-color_black" x="100" y="410"/>
+        <rect width="12" height="12" class="preview-fill-color_white preview-stroke-color_black" x="115" y="410"/>
+        <text class="preview-fill-color_black" style="stroke: none;font-size: 10px; font-family: roboto-regular;" x="50" y="420">Polution</text>
+        <rect width="12" height="12" class="preview-fill-color_white preview-stroke-color_black" x="210" y="410"/>
+        <rect width="12" height="12" class="preview-fill-color_white preview-stroke-color_black" x="225" y="410"/>
+        <text class="preview-fill-color_black" style="stroke: none;font-size: 10px; font-family: roboto-regular;" x="50" y="435">Home page link</text>
+  	</g>
+    <!-- copyright -->
+  	<g>
+        <rect height="50" width="360" x="0" y="450" class="preview-fill-color_black"/>
+        <text class="preview-fill-color_white" style="stroke: none; font-size: 8px; font-family: roboto-regular;" x="130" y="470">Developed bu Way2CU</text>
+        <text class="preview-fill-color_white" style="stroke: none; font-size: 8px; font-family: roboto-regular;" x="135" y="485">All rights reserved</text>
+  	</g>
 </svg>
+
