@@ -1,15 +1,56 @@
 <svg width="170" height="130" viewbox="0 0 170 130" xmlns="http://www.w3.org/2000/svg">
-	<g>
-		<rect
-			class="preview-fill-header"
-			x="0" y="0"
-			width="170" height="60"
-			fill="#a0a0a0"
-			/>
-		<circle
-			class="preview-fill-background"
-			cx="30" cy="30" r="25"
-			fill="#ffffff"
-			/>
-	</g>
+	<defs>
+        <style type="text/css">
+            @font-face {
+              font-family: "roboto-regular";
+              src: url('site/images/fonts/Roboto-Regular.ttf') format('truetype');
+            }
+        </style>
+    </defs>
+    <!-- section info -->
+  	<g>
+        <rect height="104" width="119" x="0" y="0" style="fill: #000;"/>
+        <text style="stroke: none; fill: white; font-size: 8px; font-family: roboto-regular;" x="50" y="35">Main title for</text>
+        <text style="stroke: none; fill: white; font-size: 8px; font-family: roboto-regular;" x="50" y="43">info page</text>
+        <text style="stroke: none; fill: white; font-size: 6px; font-family: roboto-regular;" x="50" y="51">Some text for info page</text>
+        <text style="stroke: none; fill: white; font-size: 6px; font-family: roboto-regular;" x="50" y="57">Some text for info page</text>
+        <text style="stroke: none; fill: white; font-size: 6px; font-family: roboto-regular;" x="50" y="63">Some text for info page</text>
+        <text style="stroke: none; fill: white; font-size: 6px; font-family: roboto-regular;" x="50" y="69">Some text for info page</text>
+        <text style="stroke: none; fill: white; font-size: 6px; font-family: roboto-regular;" x="50" y="75">Some text for info page</text>
+  	</g>
+  	<!-- section contact -->
+  	<g>
+        <rect height="104" width="51" x="119" y="0" style="fill: gray"/>
+        <text style="stroke: none; fill: white; font-size: 6px; font-family: roboto-regular;">
+    			<tspan x="122" y="30">Name:</tspan>
+    			<tspan x="122" y="40">Phone:</tspan>
+    			<tspan x="122" y="50">Email:</tspan>
+            	<tspan x="122" y="60">City:</tspan>
+        </text>
+        <line x1="140" y1="30" x2="165" y2="30" style="stroke: white; stroke-width: 1"/>
+        <line x1="140" y1="40" x2="165" y2="40" style="stroke: white; stroke-width: 1"/>
+        <line x1="140" y1="50" x2="165" y2="50" style="stroke: white; stroke-width: 1"/>
+        <polygon points="164 56 163 55 163 57" style="stroke: white; fill: white;"/>
+        <line x1="140" y1="60" x2="165" y2="60" style="stroke: white; stroke-width: 1"/>
+        <rect height="6" width="40" x="124" y="70" style="fill: white;"/>
+        <text style="stroke: none; fill: #000; font-size: 6px; font-family: roboto-regular;" x="138" y="75">Send</text>
+        <circle cx="145" cy="90" r="7" style="fill: white;"/>
+  	</g>
+  	<!-- footer -->
+  	<g>
+        <rect height="13" width="170" x="0" y="104" style="fill: white;"/>
+        <text style="stroke: none; fill: #000; font-size: 5px; font-family: roboto-regular;" x="25" y="112">Fuell usage</text>
+        <rect width="5" height="5" style="stroke: #000; fill: white; stroke-width: 0.5;" x="50" y="108"/>
+        <rect width="5" height="5" style="stroke: #000; fill: white; stroke-width: 0.5;" x="56" y="108"/>
+        <text style="stroke: none; fill: #000; font-size: 5px; font-family: roboto-regular;" x="75" y="112">Polution</text>
+        <rect width="5" height="5" style="stroke: #000; fill: white; stroke-width: 0.5;" x="95" y="108"/>
+        <rect width="5" height="5" style="stroke: #000; fill: white; stroke-width: 0.5;" x="101" y="108"/>
+        <text style="stroke: none; fill: #000; font-size: 5px; font-family: roboto-regular;" x="125" y="112">Home page link</text>
+  	</g>
+    <!-- copyright -->
+  	<g>
+        <rect height="13" width="170" x="0" y="117" class="preview-fill-color_black"/>
+        <text style="stroke: none; fill: white; font-size: 4px; font-family: roboto-regular;" x="65" y="122">Developed by Way2CU</text>
+        <text style="stroke: none; fill: white; font-size: 4px; font-family: roboto-regular;" x="69" y="127">All rights reserved</text>
+  	</g>
 </svg>

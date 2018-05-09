@@ -40,18 +40,18 @@
     <!-- footer -->
   	<g>
         <rect height="50" width="360" x="0" y="400" class="preview-fill-color_white"/>
-        <text class="preview-fill-color_black" style="stroke: none;font-size: 10px; font-family: roboto-regular;" x="150" y="420">Fuell usage</text>
-        <rect width="12" height="12" class="preview-fill-color_white preview-stroke-color_black" x="100" y="410"/>
-        <rect width="12" height="12" class="preview-fill-color_white preview-stroke-color_black" x="115" y="410"/>
-        <text class="preview-fill-color_black" style="stroke: none;font-size: 10px; font-family: roboto-regular;" x="50" y="420">Polution</text>
-        <rect width="12" height="12" class="preview-fill-color_white preview-stroke-color_black" x="210" y="410"/>
-        <rect width="12" height="12" class="preview-fill-color_white preview-stroke-color_black" x="225" y="410"/>
-        <text class="preview-fill-color_black" style="stroke: none;font-size: 10px; font-family: roboto-regular;" x="50" y="435">Home page link</text>
+        <text class="preview-fill-color_black" style="stroke: none;font-size: 10px; font-family: roboto-regular;" x="135" y="425">Fuell usage</text>
+        <rect width="12" height="12" class="preview-fill-color_white preview-stroke-color_black" x="90" y="415"/>
+        <rect width="12" height="12" class="preview-fill-color_white preview-stroke-color_black" x="105" y="415"/>
+        <text class="preview-fill-color_black" style="stroke: none;font-size: 10px; font-family: roboto-regular;" x="50" y="425">Polution</text>
+        <rect width="12" height="12" class="preview-fill-color_white preview-stroke-color_black" x="190" y="415"/>
+        <rect width="12" height="12" class="preview-fill-color_white preview-stroke-color_black" x="205" y="415"/>
+        <text class="preview-fill-color_black" style="stroke: none;font-size: 10px; font-family: roboto-regular;" x="250" y="425">Home page link</text>
   	</g>
     <!-- copyright -->
   	<g>
         <rect height="50" width="360" x="0" y="450" class="preview-fill-color_black"/>
-        <text class="preview-fill-color_white" style="stroke: none; font-size: 8px; font-family: roboto-regular;" x="130" y="470">Developed bu Way2CU</text>
+        <text class="preview-fill-color_white" style="stroke: none; font-size: 8px; font-family: roboto-regular;" x="130" y="470">Developed by Way2CU</text>
         <text class="preview-fill-color_white" style="stroke: none; font-size: 8px; font-family: roboto-regular;" x="135" y="485">All rights reserved</text>
   	</g>
 </svg>
