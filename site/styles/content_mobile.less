@@ -46,7 +46,23 @@ section#contact {
 				background-color: @color_form_background;
 				border: 0;
 				border-bottom: 1px solid @color_white;
+				color: @color_white;
 
+				&:active,
+				&:focus {
+					border-left: 1px solid @color_white;
+				}
+
+				html[dir=rtl] &:hover,
+				html[dir=rtl] &:focus {
+					border-left: none;
+					border-right: 1px solid @color_white;
+				}
+
+			}
+
+			select {
+				width: 99%;
 			}
 
 			&.checkbox {

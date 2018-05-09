@@ -72,11 +72,29 @@ section#contact {
 
 			input,
 			select {
+				color: @color_white;
 				display: inline-block;
-				width: 78%;
+				width: 73%;
 				background-color: @color_form_background;
 				border: 0;
 				border-bottom: 1px solid @color_white;
+				outline: none;
+				padding: 0.3rem 0.5rem;
+
+				&:hover,
+				&:focus {
+					border-left: 1px solid @color_white;
+				}
+
+				html[dir=rtl] &:hover,
+				html[dir=rtl] &:focus {
+					border-left: none;
+					border-right: 1px solid @color_white;
+				}
+			}
+
+			select {
+				width: 79%;
 			}
 
 			&.checkbox {
