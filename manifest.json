@@ -5,59 +5,55 @@
 	"author": "John Doe",
 	"contact": "john@email.com",
 	"version": "1.0",
-	"caracal_version": "v0.4",
+	"caracal_version": "develop",
 	"updated": "2017-12-31 12:00:00",
 	"categories": ["mini-site"],
-	"features": ["ltr"],
+	"features": ["ltr", "rtl"],
 	"themes": [
 		{
 			"name": "default",
 			"colors": {
-				@color_white: #fff;
-				@color_black: #000;
-
-				@color_form_background: lighten(@color_black, 30%);
-				@color_button_effects: #E50000;
+				"@color_white": "#fff",
+				"@color_black": "#000",
+				"@color_form_background": "lighten(@color_black, 30%)",
+				"@color_button_effects": "#E50000"
 			}
 		},
 		{
 			"name": "dim_light_blue",
 			"colors": {
-				@color_white: #fff;
-				@color_black: #000;
-				@color_blue: #071140;
-				@color_green: #04400F;
-				@color_gray: lighten(@color_black, 30%);
-
-				@color_form_background: mix(@color_blue, @color_gray, 70%);
-				@color_button_effects: mix(@color_green, @color_gray, 70%);
+				"@color_white": "#fff",
+				"@color_black": "#000",
+				"@color_blue": "#071140",
+				"@color_green": "#04400F",
+				"@color_gray": "lighten(@color_black, 30%)",
+				"@color_form_background": "mix(@color_blue, @color_gray, 70%)",
+				"@color_button_effects": "mix(@color_green, @color_gray, 70%)"
 			}
 		},
 		{
 			"name": "dim_light_green",
 			"colors": {
-				@color_white: #fff;
-				@color_black: #000;
-				@color_blue: #071140;
-				@color_green: #04400F;
-				@color_gray: lighten(@color_black, 30%);
-
-				@color_form_background: darken(@color_green, 10%);
-				@color_button_effects: mix(@color_blue, @color_gray, 70%);
+				"@color_white": "#fff",
+				"@color_black": "#000",
+				"@color_blue": "#071140",
+				"@color_green": "#04400F",
+				"@color_gray": "lighten(@color_black, 30%)",
+				"@color_form_background": "darken(@color_green, 10%)",
+				"@color_button_effects": "mix(@color_blue, @color_gray, 70%)"
 			}
 		},
 		{
 			"name": "dim_light_purple",
 			"colors": {
-				@color_white: #fff;
-				@color_black: #000;
-				@color_blue: #071140;
-				@color_purple: #380540;
-				@color_green: #04400F;
-				@color_gray: lighten(@color_black, 30%);
-
-				@color_form_background: mix(@color_purple, @color_gray, 50%);
-				@color_button_effects: mix(@color_green, @color_gray, 70%);
+				"@color_white": "#fff",
+				"@color_black": "#000",
+				"@color_blue": "#071140",
+				"@color_purple": "#380540",
+				"@color_green": "#04400F",
+				"@color_gray": "lighten(@color_black, 30%)",
+				"@color_form_background": "mix(@color_purple, @color_gray, 50%)",
+				"@color_button_effects": "mix(@color_green, @color_gray, 70%)"
 			}
 		}
 	]
