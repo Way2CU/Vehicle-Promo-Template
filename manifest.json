@@ -15,6 +15,7 @@
 			"colors": {
 				"@color_white": "#fff",
 				"@color_black": "#000",
+				"@color_title_part": "lighten(@color_black, 50%)",
 				"@color_form_background": "lighten(@color_black, 30%)",
 				"@color_button_effects": "#E50000"
 			}
@@ -27,6 +28,7 @@
 				"@color_blue": "#071140",
 				"@color_green": "#04400F",
 				"@color_gray": "lighten(@color_black, 30%)",
+				"@color_title_part": "lighten(@color_black, 50%)",
 				"@color_form_background": "mix(@color_blue, @color_gray, 70%)",
 				"@color_button_effects": "mix(@color_green, @color_gray, 70%)"
 			}
@@ -39,6 +41,7 @@
 				"@color_blue": "#071140",
 				"@color_green": "#04400F",
 				"@color_gray": "lighten(@color_black, 30%)",
+				"@color_title_part": "lighten(@color_black, 50%)",
 				"@color_form_background": "darken(@color_green, 10%)",
 				"@color_button_effects": "mix(@color_blue, @color_gray, 70%)"
 			}
@@ -52,6 +55,7 @@
 				"@color_purple": "#380540",
 				"@color_green": "#04400F",
 				"@color_gray": "lighten(@color_black, 30%)",
+				"@color_title_part": "lighten(@color_black, 50%)",
 				"@color_form_background": "mix(@color_purple, @color_gray, 50%)",
 				"@color_button_effects": "mix(@color_green, @color_gray, 70%)"
 			}

@@ -18,6 +18,12 @@ footer {
 		background-color: @color_white;
 		padding: 0.5rem 1rem;
 
+		@polution_rank_13_color: #FB2F1F;
+		@polution_rank_14_color: #AE002F;
+
+		@safety_rank_6_color: #315DB9;
+		@safety_rank_7_color: #4E5EB8;
+
 		a {
 			text-decoration: none;
 			color: @color_black;
@@ -49,10 +55,27 @@ footer {
 				}
 
 				tbody > tr > td{
-					border: 1px solid @color_form_background;
 					border-collapse: collapse;
 					padding: 0.5rem;
+					color: @color_white;
+					width: 20px;
 				}
+			}
+
+			table:nth-of-type(1) td:nth-of-type(1) {
+				background-color: @polution_rank_13_color;
+			}
+
+			table:nth-of-type(1) td:nth-of-type(2) {
+				background-color: @polution_rank_14_color;
+			}
+
+			table:nth-of-type(2) td:nth-of-type(1) {
+				background-color: @safety_rank_6_color;
+			}
+
+			table:nth-of-type(2) td:nth-of-type(2) {
+				background-color: @safety_rank_7_color;
 			}
 		}
 	}
