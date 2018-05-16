@@ -36,6 +36,7 @@
 			</section>
 			<footer>
 				<div id="vehicle_stats">
+					<!-- tabular vehicle stats preview -->
 					<cms:module
 						name="articles"
 						action="show"
@@ -43,7 +44,17 @@
 						template="kodkod/articles/generic.xml"
 						kodkod:type="articles"
 						/>
-
+					<!-- popup vehicle overview -->
+					<div id="vehicle_overview">
+						<cms:module
+							name="articles"
+							action="show"
+							text_id="vehicle_overview"
+							group="vehicle_1"
+							template="stock/article_generic.xml"
+							/>
+					</div>
+					<!-- home link -->
 					<cms:module
 						name="links"
 						action="show"

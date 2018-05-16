@@ -49,8 +49,24 @@ Site.is_mobile = function() {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
-	if (Site.is_mobile())
+	if (Site.is_mobile()) {
 		Site.mobile_menu = new Caracal.MobileMenu();
+
+		var preview_tables = document.querySelector('div#vehicle_stats > article');
+		var vehicle_overview = document.querySelector('div#vehicle_overview');
+
+		preview_tables.addEventListener('click', function(event) {
+			event.preventDefault();
+			vehicle_overview.classList.toggle('toggle_overview_visibility');
+			console.log("damn");
+		});
+		// for(var i=0; i < preview_tables.length; i++) {
+		// 	preview_tables[i].addEventListener('click', function(event) {
+		// 		event.preventDefault();
+		// 		vehicle_overview.classList.toggle('toggle_overview_visibility');
+		// 	});
+		// }
+	}
 };
 
 
