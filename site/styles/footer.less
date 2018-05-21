@@ -7,13 +7,14 @@
  */
 
 footer {
-	height: 20vh;
+	height: 15vh;
 	box-sizing: border-box;
+	padding: 1rem;
 
 	#vehicle_stats {
 		box-sizing: border-box;
-		display: block;
-		width: 100%;
+		display: inline-block;
+		width: 65%;
 		height: 50%;
 		background-color: @color_white;
 		padding: 0.5rem 1rem;
@@ -66,14 +67,22 @@ footer {
 			display: inline-block;
 			width: 70%;
 			vertical-align: middle;
+			box-shadow: 1px 0.5px 0.5px 0.7px @color_form_background;
+			margin-right: 1rem;
+			padding: 0.5rem 0rem;
 
 			.toggle_overview_visibility {
 				opacity: 1;
 				transition: opacity 0.3s;
 			}
 
+			&:hover {
+				box-shadow: 1px 1px 1px 1px @color_form_background;
+			}
+
 			&:hover + div#vehicle_overview {
 				.toggle_overview_visibility;
+				box-shadow: 0px 0px 0px 0px @color_form_background;
 			}
 
 			> table {
@@ -116,8 +125,8 @@ footer {
 			opacity: 0;
 			background-color: @color_white;
 			width: 900px;
-			top: -450px;
-			left: 5%;
+			top: -430px;
+			left: 0;
 			box-shadow: 3px 2px 1px 0px fade(@color_black, 50%);
 			padding: 0.8rem;
 			transition: all 0.3s;
@@ -125,6 +134,7 @@ footer {
 			article {
 				width: 100%;
 				display: block;
+				box-shadow: none;
 
 				> p {
 					display: block;
@@ -392,15 +402,14 @@ footer {
 	}
 
 	div.copyright {
-			display: block;
+			display: inline-block;
 			box-sizing: border-box;
-			width: 100%;
-			height: 50%;
-			background-color: @color_black;
-			color: @color_white;
+			width: 25%;
+			color: @color_black;
 			text-align: center;
 			background-position: calc(~'50% - 130px') center;
 			padding: 1em 0;
+			vertical-align: middle;
 
 			a:hover,
 			a:active {

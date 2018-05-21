@@ -41,6 +41,11 @@ footer {
 		padding: 0.5rem 1rem;
 		position: relative;
 
+		article {
+			box-shadow: 1px 0.5px 0.5px 0.7px @color_form_background;
+			padding: 1rem 0.3rem;
+		}
+
 		a {
 			text-decoration: none;
 			color: @color_black;
@@ -72,6 +77,7 @@ footer {
 			}
 
 			article {
+				box-shadow: none;
 
 				table {
 					display: table;
@@ -126,10 +132,13 @@ footer {
 
 					&:nth-of-type(2) {
 						border: none;
+						font-size: 0.5rem;
+						margin-bottom: 3rem;
 
 						th,
 						td {
 							border: none;
+							padding: 0.2rem;
 						}
 
 						thead {
@@ -206,10 +215,12 @@ footer {
 
 					&:nth-of-type(4) {
 						border: none;
+						font-size: 0.5rem;
 
 						th,
 						td {
 							border: none;
+							padding: 0.2rem;
 						}
 
 						thead {
