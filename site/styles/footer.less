@@ -71,6 +71,11 @@ footer {
 			margin-right: 1rem;
 			padding: 0.5rem 0rem;
 
+			html[dir=rtl] & {
+				margin-right: 0;
+				margin-left: 1rem;
+			}
+
 			.toggle_overview_visibility {
 				opacity: 1;
 				transition: opacity 0.3s;
@@ -130,6 +135,10 @@ footer {
 			box-shadow: 3px 2px 1px 0px fade(@color_black, 50%);
 			padding: 0.8rem;
 			transition: all 0.3s;
+
+			html[dir=rtl] & {
+				right: 0;
+			}
 
 			article {
 				width: 100%;
@@ -316,6 +325,10 @@ footer {
 					box-sizing: border-box;
 					vertical-align: bottom;
 
+					thead {
+						font-size: 0.8rem;
+					}
+
 					thead th {
 						padding-bottom: 0.5rem;
 						padding-top: 0.5rem;
@@ -416,5 +429,32 @@ footer {
 				color:@color_form_background;
 				transition: all 0.3s;
 			}
+	}
+}
+
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1200px) {
+	section#info,
+	section#contact {
+		height: 500px;
+	}
+
+	section#contact {
+		form {
+			padding: 1rem 1rem;
+		}
+	}
+
+	section#info {
+		article {
+			left: 15%;
+		}
+	}
+
+	footer {
+		height: 115px;
+
+		div.copyright {
+			width: 35%;
+		}
 	}
 }
