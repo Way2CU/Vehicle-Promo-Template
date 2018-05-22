@@ -14,11 +14,12 @@ footer {
 	#vehicle_stats {
 		box-sizing: border-box;
 		display: inline-block;
-		width: 65%;
+		width: 50%;
 		height: 50%;
 		background-color: @color_white;
 		padding: 0.5rem 1rem;
 		position: relative;
+		padding: 0.5rem calc(~'(50% - 350px) / 2');
 
 
 
@@ -48,28 +49,16 @@ footer {
 		@safety_rank_7_color: #456DB8;
 		@safety_rank_8_color: #4359AC;
 
-		a {
-			text-decoration: none;
-			color: @color_black;
-			display: inline-block;
-			width: 25%;
-			cursor: pointer;
-
-			&:hover,
-			&:focus,
-			&:active {
-				color: @color_button_effects;
-			}
-		}
 
 		article {
 			text-align: center;
 			display: inline-block;
-			width: 70%;
 			vertical-align: middle;
-			box-shadow: 1px 0.5px 0.5px 0.7px @color_form_background;
+			box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+			border: 1px solid rgba(0, 0, 0, 0.2);
 			margin-right: 1rem;
-			padding: 0.5rem 0rem;
+			padding: 0.5rem 0.5rem;
+
 
 			html[dir=rtl] & {
 				margin-right: 0;
@@ -82,7 +71,7 @@ footer {
 			}
 
 			&:hover {
-				box-shadow: 1px 1px 1px 1px @color_form_background;
+				border: 1px solid @color_button_effects;
 			}
 
 			&:hover + div#vehicle_overview {
@@ -93,6 +82,7 @@ footer {
 			> table {
 				display: inline-block;
 				vertical-align: middle;
+				font-size: 0.8rem;
 
 				> thead,
 				> tbody {
@@ -104,7 +94,16 @@ footer {
 					border-collapse: collapse;
 					padding: 0.5rem;
 					color: @color_white;
-					width: 20px;
+					width: 12px;
+				}
+			}
+
+			table:nth-of-type(1) {
+				margin-right: 3rem;
+
+				html[dir=rtl] & {
+					margin-right: 0;
+					margin-left: 3rem;
 				}
 			}
 
@@ -144,6 +143,7 @@ footer {
 				width: 100%;
 				display: block;
 				box-shadow: none;
+				border: none;
 
 				> p {
 					display: block;
@@ -417,12 +417,11 @@ footer {
 	div.copyright {
 			display: inline-block;
 			box-sizing: border-box;
-			width: 25%;
 			color: @color_black;
 			text-align: center;
 			background-position: calc(~'50% - 130px') center;
-			padding: 1em 0;
 			vertical-align: middle;
+			padding: 1rem calc(~'(50% - 350px) / 2');
 
 			a:hover,
 			a:active {

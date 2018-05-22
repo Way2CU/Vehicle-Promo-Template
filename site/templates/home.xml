@@ -32,7 +32,12 @@
 					kodkod:type="contact_form"
 					/>
 
-					<figure class="logo"/>
+					<a
+						href="URL::make()"
+						cms:eval="href"
+						>
+						<figure class="logo"/>
+					</a>
 			</section>
 			<footer>
 				<div id="vehicle_stats">

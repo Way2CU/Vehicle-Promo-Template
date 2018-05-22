@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document>
-	<a
-		href="$params['url']"
-		cms:eval="href"
-		>
-		<cms:markdown param="description" multilanguage="yes"/>
-	</a>
-</document>

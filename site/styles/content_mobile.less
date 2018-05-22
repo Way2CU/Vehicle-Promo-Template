@@ -23,6 +23,7 @@ section#info {
 section#contact {
 	background-color: @color_form_background;
 	color: @color_white;
+	padding: 2rem 0.5rem;
 
 	form {
 		display: block;
@@ -99,15 +100,19 @@ section#contact {
 		}
 	}
 
-	figure.logo {
-		display: block;
-		margin: 0 auto;
-		width: 6rem;
-		height: 6rem;
+	a {
+		pointer-events: auto;
 
-		background-image: url(@logo);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: contain;
+		figure.logo {
+			display: block;
+			margin: 0 auto;
+			width: 6rem;
+			height: 6rem;
+
+			background-image: url(@logo);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
 	}
 }
