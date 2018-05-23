@@ -152,3 +152,40 @@ section#contact {
 		}
 	}
 }
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+	section#info,
+	section#contact {
+		display: block;
+		width: auto;
+		height: auto;
+	}
+
+	section#contact {
+
+		padding: @section_spacing calc(~'(100% - 500px) / 2');
+
+		form {
+			border: 1px solid @color_white;
+			padding: 1rem 1rem;
+
+			label {
+				margin-bottom: 1.5rem;
+			}
+		}
+
+		button {
+			margin: 1rem auto;
+		}
+
+		a figure.logo {
+			margin-top: 2rem;
+		}
+	}
+
+	section#info {
+		article {
+			left: 15%;
+		}
+	}
+}

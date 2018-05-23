@@ -17,7 +17,6 @@ footer {
 	box-sizing: border-box;
 	display: inline-block;
 	background-color: @color_white;
-	padding: 0.5rem 1rem;
 	position: relative;
 	padding: 0.5rem calc(~'(50% - 200px) / 2');
 
@@ -349,29 +348,9 @@ div.copyright {
 	}
 }
 
-@media only screen and (min-device-width: 1000px) and (max-device-width: 1200px) {
-	section#info,
-	section#contact {
-		height: 500px;
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+	div.copyright {
+		padding: 1rem calc(~'(50% - 300px) / 2');
 	}
 
-	section#contact {
-		form {
-			padding: 1rem 1rem;
-		}
-	}
-
-	section#info {
-		article {
-			left: 15%;
-		}
-	}
-
-	footer {
-		height: 115px;
-
-		div.copyright {
-			width: 35%;
-		}
-	}
 }
