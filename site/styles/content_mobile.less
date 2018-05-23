@@ -46,7 +46,7 @@ section#contact {
 				padding: 0.5rem 0.5rem;
 				width: 95%;
 				background-color: @color_form_background;
-				border: 0;
+				border: 1px solid transparent;
 				border-bottom: 1px solid @color_white;
 				color: @color_white;
 
@@ -86,15 +86,16 @@ section#contact {
 			button {
 				display: block;
 				margin: 0 auto;
-				width: 95%;
-				padding: 0.3rem 0;
+				padding: 0.5rem 3rem;
+				border: 1px solid transparent;
+				border-radius: 3px;
+				text-transform: uppercase;
+				font-size: 1.1rem;
 
 				&:focus,
 				&:active {
 					background-color: @color_button_effects;
 					color: @color_white;
-					border: 0;
-					padding: 0.5rem 1rem;
 				}
 			}
 		}
