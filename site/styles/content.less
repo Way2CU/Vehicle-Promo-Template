@@ -9,7 +9,7 @@
 section#info {
 	position: relative;
 	box-sizing: border-box;
-	width: 70%;
+	width: calc(~'(100% - 400px)');
 	display: inline-block;
 	height: calc(~'(100vh - 7.5rem)');
 	background-color: @color_black;
@@ -46,10 +46,11 @@ section#info {
 section#contact {
 	display: inline-block;
 	box-sizing: border-box;
-	width: 30%;
+	width: 400px;
 	height: calc(~'(100vh - 7.5rem)');
 	background-color: @color_form_background;
 	vertical-align: top;
+	overflow-y: scroll;
 
 	form {
 		display: block;
