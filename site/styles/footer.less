@@ -7,427 +7,345 @@
  */
 
 footer {
-	height: 15vh;
 	box-sizing: border-box;
 	padding: 1rem;
+	font-size: 1rem;
+}
 
-	#vehicle_stats {
-		box-sizing: border-box;
-		display: inline-block;
-		width: 50%;
-		height: 50%;
-		background-color: @color_white;
-		padding: 0.5rem 1rem;
-		position: relative;
-		padding: 0.5rem calc(~'(50% - 350px) / 2');
+// container for vehicle stats
+#stats {
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: @color_white;
+	padding: 0.5rem 1rem;
+	position: relative;
+	padding: 0.5rem calc(~'(50% - 200px) / 2');
 
+	// stats preview
+	> p {
+		padding: 1.5rem 1rem;
+		margin: 0;
+		box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		transition: all 0.3s;
 
+		&:hover,
+		&:active {
+			border: 1px solid @color_button_effects;
+			transition: all 0.3s;
+			cursor: pointer;
+		}
 
-		@polution_rank_1_color: #0E3416;
-		@polution_rank_2_color: #175029;
-		@polution_rank_3_color: #22653D;
-		@polution_rank_4_color: #2D7A4B;
-		@polution_rank_5_color: #52A845;
-		@polution_rank_6_color: #9DBA36;
-		@polution_rank_7_color: #D3CC19;
-		@polution_rank_8_color: #F8E900;
-		@polution_rank_9_color: #FCCE00;
-		@polution_rank_10_color: #E7821E;
-		@polution_rank_11_color: #E35A24;
-		@polution_rank_12_color: #E01A28;
-		@polution_rank_13_color: #B9131E;
-		@polution_rank_14_color: #9C1922;
-		@polution_rank_15_color: #751216;
+		strong {
+			padding: 0.5rem;
+			color: @color_white;
 
-		@safety_rank_0_color: #A32B33;
-		@safety_rank_1_color: #EB5A22;
-		@safety_rank_2_color: #FCCE00;
-		@safety_rank_3_color: #3ABA8C;
-		@safety_rank_4_color: #3589A1;
-		@safety_rank_5_color: #3489CC;
-		@safety_rank_6_color: #236CB9;
-		@safety_rank_7_color: #456DB8;
-		@safety_rank_8_color: #4359AC;
-
-
-		article {
-			text-align: center;
-			display: inline-block;
-			vertical-align: middle;
-			box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-			border: 1px solid rgba(0, 0, 0, 0.2);
-			margin-right: 1rem;
-			padding: 0.5rem 0.5rem;
-
-
-			html[dir=rtl] & {
-				margin-right: 0;
-				margin-left: 1rem;
-			}
-
-			.toggle_overview_visibility {
-				opacity: 1;
-				transition: opacity 0.3s;
-			}
-
-			&:hover {
-				border: 1px solid @color_button_effects;
-			}
-
-			&:hover + div#vehicle_overview {
-				.toggle_overview_visibility;
-				box-shadow: 0px 0px 0px 0px @color_form_background;
-			}
-
-			> table {
-				display: inline-block;
-				vertical-align: middle;
-				font-size: 0.8rem;
-
-				> thead,
-				> tbody {
-					display: inline-block;
-					vertical-align: middle;
-				}
-
-				> tbody > tr > td{
-					border-collapse: collapse;
-					padding: 0.5rem;
-					color: @color_white;
-					width: 12px;
-				}
-			}
-
-			table:nth-of-type(1) {
-				margin-right: 3rem;
-
-				html[dir=rtl] & {
-					margin-right: 0;
-					margin-left: 3rem;
-				}
-			}
-
-			table:nth-of-type(1) td:nth-of-type(1) {
-				background-color: @polution_rank_13_color;
-			}
-
-			table:nth-of-type(1) td:nth-of-type(2) {
-				background-color: @polution_rank_14_color;
-			}
-
-			table:nth-of-type(2) td:nth-of-type(1) {
+			&:nth-of-type(1) {
 				background-color: @safety_rank_6_color;
 			}
 
-			table:nth-of-type(2) td:nth-of-type(2) {
+			&:nth-of-type(2) {
 				background-color: @safety_rank_7_color;
-			}
-		}
+				margin-right: 2rem;
 
-		#vehicle_overview {
-			position: absolute;
-			opacity: 0;
-			background-color: @color_white;
-			width: 900px;
-			top: -430px;
-			left: 0;
-			box-shadow: 3px 2px 1px 0px fade(@color_black, 50%);
-			padding: 0.8rem;
-			transition: all 0.3s;
-
-			html[dir=rtl] & {
-				right: 0;
+				html[dir=rtl] & {
+					margin-right: 0;
+					margin-left: 2rem
+				}
 			}
 
-			article {
-				width: 100%;
-				display: block;
-				box-shadow: none;
-				border: none;
+			&:nth-of-type(3) {
+				background-color: @polution_rank_13_color;
+			}
 
-				> p {
-					display: block;
-					width: 100%;
-					font-size: 0.8rem;
-				}
-
-				table {
-					margin-bottom: 1.5rem;
-				}
-
-				table:nth-of-type(1) {
-					display: inline-block;
-					width: 55%;
-					vertical-align: bottom;
-					table-layout: auto;
-					border-collapse: collapse;
-
-					thead {
-						display: table-header-group;
-						font-size: 0.8rem;
-					}
-
-					tbody {
-						display: table-row-group;
-						font-size: 0.8rem;
-					}
-
-					th,
-					td {
-						border: 1px solid @color_form_background;
-						border-collapse: collapse;
-					}
-
-					thead tr th {
-						text-align: center;
-						padding: 0.5rem;
-					}
-
-					tr td {
-						color: @color_black;
-						background-color: @color_white;
-					}
-
-					tr:nth-of-type(1) td:nth-of-type(2) {
-						white-space: nowrap;
-					}
-
-					tr:nth-of-type(2) td:nth-of-type(2) {
-						white-space: nowrap;
-					}
-
-					tr:nth-of-type(1) td:nth-of-type(3) {
-						background-color: @safety_rank_6_color;
-						color: @color_white;
-					}
-
-					tr:nth-of-type(2) td:nth-of-type(3) {
-						background-color: @safety_rank_7_color;
-						color: @color_white;
-					}
-				}
-
-				table:nth-of-type(2) {
-					display: inline-block;
-					width: 35%;
-					box-sizing: border-box;
-					vertical-align: bottom;
-					font-size: 0.8rem;
-
-					thead th {
-						padding-bottom: 0.5rem;
-						padding-top: 0.5rem;
-					}
-
-					tr td {
-						color: @color_white;
-						font-size: 0.7rem;
-						width: auto;
-					}
-
-					td:nth-of-type(1) {
-						background-color: @color_white;
-						color: @color_black;
-					}
-
-					td:nth-of-type(2) {
-						background-color: @safety_rank_0_color;
-					}
-
-					td:nth-of-type(3) {
-						background-color: @safety_rank_1_color;
-					}
-
-					td:nth-of-type(4) {
-						background-color: @safety_rank_2_color;
-					}
-
-					td:nth-of-type(5) {
-						background-color: @safety_rank_3_color;
-					}
-
-					td:nth-of-type(6) {
-						background-color: @safety_rank_4_color;
-					}
-
-					td:nth-of-type(7) {
-						background-color: @safety_rank_5_color;
-					}
-
-					td:nth-of-type(8) {
-						background-color: @safety_rank_6_color;
-					}
-
-					td:nth-of-type(9) {
-						background-color: @safety_rank_7_color;
-					}
-
-					td:nth-of-type(10) {
-						background-color: @safety_rank_8_color;
-					}
-
-					td:nth-of-type(11) {
-						background-color: @color_white;
-						color: @color_black;
-					}
-				}
-
-				table:nth-of-type(3) {
-					width: 40%;
-					table-layout: auto;
-					border-collapse: collapse;
-
-					tr td {
-						color: @color_black;
-					}
-
-					th,
-					td {
-						border: 1px solid @color_form_background;
-						border-collapse: collapse;
-						padding: 0.5rem;
-					}
-
-					thead {
-						display: table-header-group;
-						font-size: 0.8rem;
-					}
-
-					tbody {
-						display: table-row-group;
-						font-size: 0.8rem;
-					}
-
-					tr:nth-of-type(1) td:nth-of-type(3) {
-						white-space: nowrap;
-					}
-
-					tr:nth-of-type(2) td:nth-of-type(3) {
-						white-space: nowrap;
-					}
-
-					tr:nth-of-type(1) td:nth-of-type(6) {
-						background-color: @polution_rank_13_color;
-						color: @color_white;
-					}
-
-					tr:nth-of-type(2) td:nth-of-type(6) {
-						background-color: @polution_rank_14_color;
-						color: @color_white;
-					}
-
-
-				}
-
-				table:nth-of-type(4) {
-					display: inline-block;
-					width: 50%;
-					box-sizing: border-box;
-					vertical-align: bottom;
-
-					thead {
-						font-size: 0.8rem;
-					}
-
-					thead th {
-						padding-bottom: 0.5rem;
-						padding-top: 0.5rem;
-					}
-
-					tr td {
-						color: @color_white;
-						font-size: 0.7rem;
-						width: auto;
-					}
-
-					td:nth-of-type(1) {
-						background-color: @color_white;
-						color: @color_black;
-					}
-
-					td:nth-of-type(2) {
-						background-color: @polution_rank_1_color;
-					}
-
-					td:nth-of-type(3) {
-						background-color: @polution_rank_2_color;
-					}
-
-					td:nth-of-type(4) {
-						background-color: @polution_rank_3_color;
-					}
-
-					td:nth-of-type(5) {
-						background-color: @polution_rank_4_color;
-					}
-
-					td:nth-of-type(6) {
-						background-color: @polution_rank_5_color;
-					}
-
-					td:nth-of-type(7) {
-						background-color: @polution_rank_6_color;
-					}
-
-					td:nth-of-type(8) {
-						background-color: @polution_rank_7_color;
-					}
-
-					td:nth-of-type(9) {
-						background-color: @polution_rank_8_color;
-					}
-
-					td:nth-of-type(10) {
-						background-color: @polution_rank_9_color;
-					}
-
-					td:nth-of-type(11) {
-						background-color: @polution_rank_10_color;
-					}
-
-					td:nth-of-type(12) {
-						background-color: @polution_rank_11_color;
-					}
-
-					td:nth-of-type(13) {
-						background-color: @polution_rank_12_color;
-					}
-
-					td:nth-of-type(14) {
-						background-color: @polution_rank_13_color;
-					}
-
-					td:nth-of-type(15) {
-						background-color: @polution_rank_14_color;
-					}
-
-					td:nth-of-type(16) {
-						background-color: @polution_rank_15_color;
-					}
-
-					td:nth-of-type(17) {
-						background-color: @color_white;
-						color: @color_black;
-					}
-				}
+			&:nth-of-type(4) {
+				background-color: @polution_rank_14_color;
 			}
 		}
 	}
 
-	div.copyright {
+	// popup container
+	.details {
+		position: absolute;
+		opacity: 0;
+		background-color: @color_white;
+		width: 970px;
+		top: -400px;
+		left: 0;
+		box-shadow: 3px 2px 1px 0px fade(@color_black, 50%);
+		padding: 0.8rem;
+		pointer-events: none;
+		transition: all 0.3s;
+
+		html[dir=rtl] & {
+			right: 0;
+		}
+
+		&.visible {
+			opacity: 1;
+			pointer-events: auto;
+			transition: opacity 0.3s;
+		}
+
+		> p {
+			display: block;
+			width: 100%;
+			font-size: 0.8rem;
+		}
+
+		table {
+			margin: 1.5rem;
+
+			tr th,
+			tr td {
+				padding: 0.5rem;
+				font-size: 0.7rem;
+				text-align: center;
+			}
+		}
+
+		// model safety table
+		table:nth-of-type(1) {
+			display: inline-block;
+			vertical-align: bottom;
+			table-layout: auto;
+			border-collapse: collapse;
+
+			tr th,
+			tr td {
+				border: 1px solid @color_form_background;
+				border-collapse: collapse;
+			}
+
+			tr td {
+				color: @color_black;
+				background-color: @color_white;
+			}
+
+			tr:nth-of-type(1) td:nth-of-type(2) {
+				white-space: nowrap;
+			}
+
+			tr:nth-of-type(2) td:nth-of-type(2) {
+				white-space: nowrap;
+			}
+
+			tr:nth-of-type(1) td:nth-of-type(3) {
+				background-color: @safety_rank_6_color;
+				color: @color_white;
+			}
+
+			tr:nth-of-type(2) td:nth-of-type(3) {
+				background-color: @safety_rank_7_color;
+				color: @color_white;
+			}
+		}
+
+		// model polution table
+		table:nth-of-type(2) {
+			table-layout: auto;
+			border-collapse: collapse;
+			display: inline-block;
+			vertical-align: bottom;
+
+			tr th,
+			tr td {
+				border: 1px solid @color_form_background;
+				border-collapse: collapse;
+			}
+
+			tr td {
+				color: @color_black;
+			}
+
+			thead {
+				display: table-header-group;
+			}
+
+			tbody {
+				display: table-row-group;
+			}
+
+			tr:nth-of-type(1) td:nth-of-type(3) {
+				white-space: nowrap;
+			}
+
+			tr:nth-of-type(2) td:nth-of-type(3) {
+				white-space: nowrap;
+			}
+
+			tr:nth-of-type(1) td:nth-of-type(6) {
+				background-color: @polution_rank_13_color;
+				color: @color_white;
+			}
+
+			tr:nth-of-type(2) td:nth-of-type(6) {
+				background-color: @polution_rank_14_color;
+				color: @color_white;
+			}
+
+
+		}
+
+		// safety categories table
+		table:nth-of-type(3) {
 			display: inline-block;
 			box-sizing: border-box;
-			color: @color_black;
-			text-align: center;
-			background-position: calc(~'50% - 130px') center;
-			vertical-align: middle;
-			padding: 1rem calc(~'(50% - 350px) / 2');
+			vertical-align: bottom;
 
-			a:hover,
-			a:active {
-				color:@color_form_background;
-				transition: all 0.3s;
+			tr th,
+			tr td {
+				font-size: 0.6rem;
 			}
+
+			td:nth-of-type(1) {
+				background-color: @color_white;
+				color: @color_black;
+			}
+
+			td:nth-of-type(2) {
+				background-color: @safety_rank_0_color;
+			}
+
+			td:nth-of-type(3) {
+				background-color: @safety_rank_1_color;
+			}
+
+			td:nth-of-type(4) {
+				background-color: @safety_rank_2_color;
+			}
+
+			td:nth-of-type(5) {
+				background-color: @safety_rank_3_color;
+			}
+
+			td:nth-of-type(6) {
+				background-color: @safety_rank_4_color;
+			}
+
+			td:nth-of-type(7) {
+				background-color: @safety_rank_5_color;
+			}
+
+			td:nth-of-type(8) {
+				background-color: @safety_rank_6_color;
+			}
+
+			td:nth-of-type(9) {
+				background-color: @safety_rank_7_color;
+			}
+
+			td:nth-of-type(10) {
+				background-color: @safety_rank_8_color;
+			}
+
+			td:nth-of-type(11) {
+				background-color: @color_white;
+				color: @color_black;
+			}
+		}
+
+		// polution categories table
+		table:nth-of-type(4) {
+			display: inline-block;
+			box-sizing: border-box;
+			vertical-align: bottom;
+
+			tr th,
+			tr td {
+				font-size: 0.6rem;
+			}
+
+			tr td {
+				color: @color_white;
+			}
+
+			td:nth-of-type(1) {
+				background-color: @color_white;
+				color: @color_black;
+			}
+
+			td:nth-of-type(2) {
+				background-color: @polution_rank_1_color;
+			}
+
+			td:nth-of-type(3) {
+				background-color: @polution_rank_2_color;
+			}
+
+			td:nth-of-type(4) {
+				background-color: @polution_rank_3_color;
+			}
+
+			td:nth-of-type(5) {
+				background-color: @polution_rank_4_color;
+			}
+
+			td:nth-of-type(6) {
+				background-color: @polution_rank_5_color;
+			}
+
+			td:nth-of-type(7) {
+				background-color: @polution_rank_6_color;
+			}
+
+			td:nth-of-type(8) {
+				background-color: @polution_rank_7_color;
+			}
+
+			td:nth-of-type(9) {
+				background-color: @polution_rank_8_color;
+			}
+
+			td:nth-of-type(10) {
+				background-color: @polution_rank_9_color;
+			}
+
+			td:nth-of-type(11) {
+				background-color: @polution_rank_10_color;
+			}
+
+			td:nth-of-type(12) {
+				background-color: @polution_rank_11_color;
+			}
+
+			td:nth-of-type(13) {
+				background-color: @polution_rank_12_color;
+			}
+
+			td:nth-of-type(14) {
+				background-color: @polution_rank_13_color;
+			}
+
+			td:nth-of-type(15) {
+				background-color: @polution_rank_14_color;
+			}
+
+			td:nth-of-type(16) {
+				background-color: @polution_rank_15_color;
+			}
+
+			td:nth-of-type(17) {
+				background-color: @color_white;
+				color: @color_black;
+			}
+		}
+	}
+}
+
+div.copyright {
+	display: inline-block;
+	box-sizing: border-box;
+	color: @color_black;
+	text-align: center;
+	background-position: calc(~'50% - 130px') center;
+	vertical-align: middle;
+	padding: 1rem calc(~'(50% - 350px) / 2');
+
+	a:hover,
+	a:active {
+		color:@color_form_background;
+		transition: all 0.3s;
 	}
 }
 

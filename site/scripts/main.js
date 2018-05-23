@@ -49,17 +49,16 @@ Site.is_mobile = function() {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
-	if (Site.is_mobile()) {
+	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
 
-		var vehicle_preview = document.querySelector('div#vehicle_stats > article');
-		var vehicle_overview = document.querySelector('div#vehicle_overview');
+	var preview = document.querySelector('#stats > p');
+	var details = document.querySelector('div.details');
 
-		vehicle_preview.addEventListener('click', function(event) {
-			event.preventDefault();
-			vehicle_overview.classList.toggle('toggle_overview_visibility');
-		});
-	}
+	preview.addEventListener('click', function(event) {
+		event.preventDefault();
+		details.classList.toggle('visible');
+	});
 };
 
 
