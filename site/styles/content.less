@@ -17,8 +17,10 @@ section#info {
 
 	> img {
 		width: 100%;
-		display: block;
-		height: 100%;
+		height: auto;
+		position: absolute;
+		bottom: 0;
+		right: 0;
 	}
 
 	article {
@@ -136,6 +138,7 @@ section#contact {
 		}
 	}
 
+	// home link with logo
 	a {
 		display: block;
 
@@ -159,6 +162,13 @@ section#contact {
 		display: block;
 		width: auto;
 		height: auto;
+	}
+
+	section#info {
+		img {
+			position: initial;
+			display: block;
+		}
 	}
 
 	section#contact {
