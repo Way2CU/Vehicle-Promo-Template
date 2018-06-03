@@ -13,51 +13,51 @@
 		{
 			"name": "default",
 			"colors": {
-				"@color_white": "#fff",
-				"@color_black": "#000",
-				"@color_title_part": "lighten(@color_black, 50%)",
-				"@color_form_background": "lighten(@color_black, 30%)",
-				"@color_button_effects": "#E50000"
+				"white": "#fff",
+				"black": "#000",
+				"title_part": "#808080",
+				"form_background": "#303030",
+				"button_effects": "#E50000"
 			}
 		},
 		{
-			"name": "dim_light_blue",
+			"name": "blue",
 			"colors": {
-				"@color_white": "#fff",
-				"@color_black": "#000",
-				"@color_blue": "#071140",
-				"@color_green": "#04400F",
-				"@color_gray": "lighten(@color_black, 30%)",
-				"@color_title_part": "lighten(@color_black, 50%)",
-				"@color_form_background": "mix(@color_blue, @color_gray, 70%)",
-				"@color_button_effects": "mix(@color_green, @color_gray, 70%)"
+				"white": "#fff",
+				"black": "#000",
+				"blue": "#071140",
+				"green": "#04400F",
+				"gray": "lighten(@color_black, 30%)",
+				"title_part": "lighten(@color_black, 50%)",
+				"form_background": "mix(@color_blue, @color_gray, 70%)",
+				"button_effects": "mix(@color_green, @color_gray, 70%)"
 			}
 		},
 		{
-			"name": "dim_light_green",
+			"name": "green",
 			"colors": {
-				"@color_white": "#fff",
-				"@color_black": "#000",
-				"@color_blue": "#071140",
-				"@color_green": "#04400F",
-				"@color_gray": "lighten(@color_black, 30%)",
-				"@color_title_part": "lighten(@color_black, 50%)",
-				"@color_form_background": "darken(@color_green, 10%)",
-				"@color_button_effects": "mix(@color_blue, @color_gray, 70%)"
+				"white": "#fff",
+				"black": "#000",
+				"blue": "#071140",
+				"green": "#04400F",
+				"gray": "lighten(@color_black, 30%)",
+				"title_part": "lighten(@color_black, 50%)",
+				"form_background": "darken(@color_green, 10%)",
+				"button_effects": "mix(@color_blue, @color_gray, 70%)"
 			}
 		},
 		{
-			"name": "dim_light_purple",
+			"name": "purple",
 			"colors": {
-				"@color_white": "#fff",
-				"@color_black": "#000",
-				"@color_blue": "#071140",
-				"@color_purple": "#380540",
-				"@color_green": "#04400F",
-				"@color_gray": "lighten(@color_black, 30%)",
-				"@color_title_part": "lighten(@color_black, 50%)",
-				"@color_form_background": "mix(@color_purple, @color_gray, 50%)",
-				"@color_button_effects": "mix(@color_green, @color_gray, 70%)"
+				"white": "#fff",
+				"black": "#000",
+				"blue": "#071140",
+				"purple": "#380540",
+				"green": "#04400F",
+				"gray": "lighten(@color_black, 30%)",
+				"title_part": "lighten(@color_black, 50%)",
+				"form_background": "mix(@color_purple, @color_gray, 50%)",
+				"button_effects": "mix(@color_green, @color_gray, 70%)"
 			}
 		}
 	]
