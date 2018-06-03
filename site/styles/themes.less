@@ -6,47 +6,35 @@
  * Authors: Mladen Mijatov, Vladimir Anusic
  */
 
+@color_white: #fff;
+@color_black: #000;
+@color_gray: lighten(@color_black, 30%);
+
 .theme('default') {
-	@color_white: #fff;
-	@color_black: #000;
 	@color_title_part: lighten(@color_black, 50%);
-
 	@color_form_background: lighten(@color_black, 30%);
-	@color_button_effects: #E50000;
+	@color_button_effects: #e50000;
 }
 
-.theme('dim_light_blue') {
-	@color_white: #fff;
-	@color_black: #000;
-	@color_blue: #071140;
-	@color_green: #04400F;
-	@color_gray: lighten(@color_black, 30%);
-
-	@color_form_background: mix(@color_blue, @color_gray, 70%);
-	@color_button_effects: mix(@color_green, @color_gray, 70%);
+.theme('blue') {
+	@color_base: #071140;
+	@color_title_part: lighten(@color_black, 50%);
+	@color_form_background: mix(@color_base, @color_gray, 70%);
+	@color_button_effects: mix(@color_base, @color_gray, 70%);
 }
 
-.theme('dim_light_green') {
-	@color_white: #fff;
-	@color_black: #000;
-	@color_blue: #071140;
-	@color_green: #04400F;
-	@color_gray: lighten(@color_black, 30%);
-
-	@color_form_background: darken(@color_green, 10%);
-	@color_button_effects: mix(@color_blue, @color_gray, 70%);
+.theme('green') {
+	@color_base: #04400F;
+	@color_title_part: lighten(@color_black, 50%);
+	@color_form_background: @color_base;
+	@color_button_effects: mix(@color_base, @color_gray, 70%);
 }
 
-.theme('dim_light_purple') {
-	@color_white: #fff;
-	@color_black: #000;
-	@color_blue: #071140;
-	@color_purple: #380540;
-	@color_green: #04400F;
-	@color_gray: lighten(@color_black, 30%);
-
-	@color_form_background: mix(@color_purple, @color_gray, 50%);
-	@color_button_effects: mix(@color_green, @color_gray, 70%);
+.theme('purple') {
+	@color_base: #380540;
+	@color_title_part: lighten(@color_black, 50%);
+	@color_form_background: mix(@color_base, @color_gray, 50%);
+	@color_button_effects: mix(@color_base, @color_gray, 70%);
 }
 
 // mixin used for publishing selected theme name
