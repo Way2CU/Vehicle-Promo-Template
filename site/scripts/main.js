@@ -7,10 +7,10 @@
  */
 
 // create or use existing site scope
-var Site = Site || {};
+var Site = Site || new Object();
 
 // make sure variable cache exists
-Site.variable_cache = Site.variable_cache || {};
+Site.variable_cache = Site.variable_cache || new Object();
 
 
 /**
@@ -49,16 +49,14 @@ Site.is_mobile = function() {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
-	if (Site.is_mobile())
-		Site.mobile_menu = new Caracal.MobileMenu();
-
-	var preview = document.querySelector('#stats > p');
+	var preview = document.querySelector('div#stats > p');
 	var details = document.querySelector('div.details');
 
-	preview.addEventListener('click', function(event) {
-		event.preventDefault();
-		details.classList.toggle('visible');
-	});
+	if (preview)
+		preview.addEventListener('click', function(event) {
+			event.preventDefault();
+			details.classList.toggle('visible');
+		});
 };
 
 
