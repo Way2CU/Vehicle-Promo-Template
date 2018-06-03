@@ -9,30 +9,27 @@
 @color_white: #fff;
 @color_black: #000;
 @color_gray: lighten(@color_black, 30%);
+@color_title_part: lighten(@color_black, 50%);
 
 .theme('default') {
-	@color_title_part: lighten(@color_black, 50%);
 	@color_form_background: lighten(@color_black, 30%);
 	@color_button_effects: #e50000;
 }
 
 .theme('blue') {
 	@color_base: #071140;
-	@color_title_part: lighten(@color_black, 50%);
 	@color_form_background: mix(@color_base, @color_gray, 70%);
 	@color_button_effects: mix(@color_base, @color_gray, 70%);
 }
 
 .theme('green') {
 	@color_base: #04400F;
-	@color_title_part: lighten(@color_black, 50%);
 	@color_form_background: @color_base;
 	@color_button_effects: mix(@color_base, @color_gray, 70%);
 }
 
 .theme('purple') {
 	@color_base: #380540;
-	@color_title_part: lighten(@color_black, 50%);
 	@color_form_background: mix(@color_base, @color_gray, 50%);
 	@color_button_effects: mix(@color_base, @color_gray, 70%);
 }
