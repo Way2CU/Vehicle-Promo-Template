@@ -1,0 +1,16 @@
+---
+site:
+  domain: mazda.way2cu.work
+  # subdomain: test
+  # alias: domain.com
+  root: httpdocs
+  username: mazda
+  caracal_branch: v0.4
+  # ip_address: 0.0.0.0
+  # owner: Some Person
+  # plan: Unlimited
+  # database_type: 'mysql'
+
+local_site_directory: ../site
+subscription_directory: "{{ plesk_vhost_directory }}/{{ site.domain }}"
+site_directory: "{{ subscription_directory }}/{{ site.root }}"
