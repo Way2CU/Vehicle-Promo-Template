@@ -70,6 +70,18 @@ Site.on_load = function() {
 			if (!isNaN(value))
 				item.classList.add(base_class + value);
 		}
+
+	// assign classes to tables in details as well
+	var cells = document.querySelectorAll('div.details table tbody tr td:last-of-type');
+	if (cells.length > 0)
+		for (var i=0; i<4; i++) {
+			var item = cells[i];
+			var value = item.innerText;
+			var base_class = i < 2 ? 'safety_' : 'polution_';
+
+			if (!isNaN(value))
+				item.classList.add(base_class + value);
+		}
 };
 
 
