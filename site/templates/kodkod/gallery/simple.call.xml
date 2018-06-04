@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<cms:module
+		name="gallery"
+		action="show_image"
+		id=""
+		template="kodkod/gallery/parts/simple.xml"
+		/>
+</document>

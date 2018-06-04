@@ -1,0 +1,14 @@
+{
+	"site_title": "כותרת האתר",
+	"variant_article_generic": "כללי",
+	"variant_article_two_columns": "שתי עמודות",
+	"variant_article_side_image": "תמונה לצד טקסט",
+	"variant_article_floating_image": "תמונה משולבת בטקסט",
+	"variant_article_background_image": "תמונת רקע",
+	"variant_contact_form_generic": "כללי",
+	"variant_contact_form_horizontal": "שדות אנכיים",
+	"variant_gallery_simple": "תמונה פשוטה",
+	"variant_gallery_slider": "סליידר שלוש תמונות",
+	"variant_gallery_switcher": "תמונה מתחלפת",
+	"variant_gallery_stack": "אוסף תמונות"
+}

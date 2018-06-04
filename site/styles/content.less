@@ -149,19 +149,20 @@ section#contact {
 		display: block;
 		text-align: center;
 
-		figure.logo {
+		figure {
 			display: inline-block;
-			width: 6rem;
-			height: 6rem;
 			margin: 0;
 
-			background-image: url(@logo);
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: contain;
+			img {
+				display: block;
+				margin: 0 auto;
+				width: 80px;
+				height: auto;
+			}
 		}
 	}
 }
+
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
 	section#info,
