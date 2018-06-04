@@ -59,18 +59,18 @@ div#stats {
 
  	// popup container
  	.details {
- 		width: 85vw;
- 		height: 500px;
  		position: absolute;
- 		top: -550px;
- 		left: 3%;
- 		opacity: 0;
- 		transition: all 0.3s;
- 		background-color: @color_white;
- 		padding: 1rem;
- 		overflow: scroll;
- 		pointer-events: none;
+ 		width: 100%;
+		bottom: 100%;
+ 		left: 0;
 
+		box-sizing: border-box;
+ 		padding: 1rem;
+ 		overflow-y: auto;
+
+ 		opacity: 0;
+ 		background-color: @color_white;
+ 		pointer-events: none;
 
  		&.visible {
  			opacity: 1;
