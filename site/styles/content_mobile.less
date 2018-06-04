@@ -7,96 +7,109 @@
  */
 
 section#info {
+	line-height: 0;
+
 	img {
 		width: 100%;
 		height: auto;
-		margin-bottom: -5px;
 	}
 
 	article {
 		padding: 1rem;
 		color: @color_white;
 		background-color: @color_black;
+		line-height: 1.2;
+
+		h2 {
+			margin-bottom: 0.5rem;
+		}
+
+		p:last-of-type {
+			margin-bottom: 0;
+		}
 	}
 }
 
 section#contact {
+	padding: 1rem;
+
 	background-color: @color_form_background;
 	color: @color_white;
-	padding: @section_spacing 0.5rem;
 
 	h3 {
 		color: @color_white;
-		text-align: center;
 	}
 
 	form {
 		display: block;
-		padding: 2rem 1rem;
 		padding-bottom: 1rem;
 
-		label {
+		label:not(.checkbox) {
 			display: block;
-			width: 100%;
-			margin-bottom: 2rem;
+			margin-bottom: 1.5rem;
+			min-height: @finger_size;
 
 			span {
 				display: block;
-				width: 100%;
-				margin-bottom: 0.5rem;
+				margin-bottom: 0.1rem;
 			}
 
 			input,
 			select {
-				padding: 0.5rem 0.5rem;
-				width: 95%;
-				background-color: @color_form_background;
+				width: 100%;
+				padding: 0.5rem;
+				box-sizing: border-box;
+
 				border: 1px solid transparent;
-				border-bottom: 1px solid @color_white;
+				border-bottom-color: fade(@color_white, 40);
+				background-color: @color_form_background;
+
 				color: @color_white;
 
-				&:active,
 				&:focus {
-					border-left: 1px solid @color_white;
-				}
-
-				html[dir=rtl] &:hover,
-				html[dir=rtl] &:focus {
-					border-left: none;
-					border-right: 1px solid @color_white;
-				}
-
-			}
-
-			select {
-				width: 99%;
-			}
-
-			&.checkbox {
-				span {
-					display: inline-block;
-					width: 75%;
-					vertical-align: middle;
-				}
-
-				input {
-					display: inline-block;
-					width: 20%;
-					vertical-align: middle;
+					border-bottom-color: @color_white;
+					background-color: lighten(@color_form_background, 10);
 				}
 			}
 		}
 
-		div.controls {
-			button {
-				display: block;
-				margin: 0 auto;
-				padding: 0.5rem 3rem;
-				border: 1px solid transparent;
-				border-radius: 3px;
-				text-transform: uppercase;
-				font-size: 1.1rem;
+		label.checkbox {
+			input {
+				display: none;
+			}
 
+			span:before {
+				content: '';
+				display: inline-block;
+				vertical-align: top;
+				width: 1rem;
+				height: 1rem;
+
+				margin-right: 0.3rem;
+
+				border: 1px solid fade(@color_white, 40);
+				border-radius: 0.1rem;
+				background-color: none;
+
+				line-height: 1;
+			}
+
+			input:checked + span:before {
+				background-color: @color_white;
+			}
+		}
+
+		div.controls {
+			padding: 2rem 0rem;
+			text-align: center;
+
+			button {
+				padding: 0.5rem 3rem;
+
+				border: 0;
+				border-radius: 3px;
+
+				&:hover,
 				&:focus,
 				&:active {
 					background-color: @color_button_effects;
@@ -110,14 +123,13 @@ section#contact {
 	a {
 		pointer-events: auto;
 		display: block;
-		margin: 0 auto;
-		margin-top: 2rem;
+		text-align: center;
 
 		figure.logo {
-			display: block;
-			margin: 0 auto;
+			display: inline-block;
 			width: 6rem;
 			height: 6rem;
+			margin: 0;
 
 			background-image: url(@logo);
 			background-repeat: no-repeat;
