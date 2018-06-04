@@ -39,26 +39,13 @@ footer {
 			padding: 0.5rem;
 			color: @color_white;
 
-			&.safety_6 {
-				background-color: @safety_rank_6_color;
-			}
-
 			&.safety_7 {
-				background-color: @safety_rank_7_color;
 				margin-right: 2rem;
 
 				html[dir=rtl] & {
 					margin-right: 0;
 					margin-left: 2rem
 				}
-			}
-
-			&.polution_13 {
-				background-color: @polution_rank_13_color;
-			}
-
-			&.polution_14 {
-				background-color: @polution_rank_14_color;
 			}
 		}
 	}
@@ -129,14 +116,18 @@ footer {
 				white-space: nowrap;
 			}
 
-			tr:nth-of-type(1) td:nth-of-type(3) {
+			td.safety_6 {
 				background-color: @safety_rank_6_color;
 				color: @color_white;
+				font-weight: bold;
+				text-shadow: 1px 1px 1px @color_black;
 			}
 
-			tr:nth-of-type(2) td:nth-of-type(3) {
+			td.safety_7 {
 				background-color: @safety_rank_7_color;
 				color: @color_white;
+				font-weight: bold;
+				text-shadow: 1px 1px 1px @color_black;
 			}
 		}
 
@@ -173,17 +164,19 @@ footer {
 				white-space: nowrap;
 			}
 
-			tr:nth-of-type(1) td:nth-of-type(6) {
+			td.polution_13 {
 				background-color: @polution_rank_13_color;
 				color: @color_white;
+				font-weight: bold;
+				text-shadow: 1px 1px 1px @color_black;
 			}
 
-			tr:nth-of-type(2) td:nth-of-type(6) {
+			td.polution_14 {
 				background-color: @polution_rank_14_color;
 				color: @color_white;
+				font-weight: bold;
+				text-shadow: 1px 1px 1px @color_black;
 			}
-
-
 		}
 
 		// safety categories table
@@ -191,6 +184,14 @@ footer {
 			display: inline-block;
 			box-sizing: border-box;
 			vertical-align: bottom;
+			color: @color_white;
+			font-weight: bold;
+			text-shadow: 1px 1px 1px @color_black;
+
+			thead {
+				color: @color_text;
+				text-shadow: none;
+			}
 
 			tr th,
 			tr td {
@@ -200,6 +201,8 @@ footer {
 			td:nth-of-type(1) {
 				background-color: @color_white;
 				color: @color_black;
+				font-weight: normal;
+				text-shadow: none;
 			}
 
 			td:nth-of-type(2) {
@@ -241,6 +244,8 @@ footer {
 			td:nth-of-type(11) {
 				background-color: @color_white;
 				color: @color_black;
+				font-weight: normal;
+				text-shadow: none;
 			}
 		}
 
@@ -249,6 +254,13 @@ footer {
 			display: inline-block;
 			box-sizing: border-box;
 			vertical-align: bottom;
+			font-weight: bold;
+			text-shadow: 1px 1px 1px @color_black;
+
+			thead {
+				color: @color_text;
+				text-shadow: none;
+			}
 
 			tr th,
 			tr td {
@@ -262,6 +274,8 @@ footer {
 			td:nth-of-type(1) {
 				background-color: @color_white;
 				color: @color_black;
+				font-weight: normal;
+				text-shadow: none;
 			}
 
 			td:nth-of-type(2) {
@@ -327,6 +341,8 @@ footer {
 			td:nth-of-type(17) {
 				background-color: @color_white;
 				color: @color_black;
+				font-weight: normal;
+				text-shadow: none;
 			}
 		}
 	}
