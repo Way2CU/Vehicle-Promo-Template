@@ -49,6 +49,7 @@ Site.is_mobile = function() {
  * Function called when document and images have been completely loaded.
  */
 Site.on_load = function() {
+	// implement click handler for details
 	var preview = document.querySelector('div#stats > p');
 	var details = document.querySelector('div.details');
 
@@ -57,6 +58,18 @@ Site.on_load = function() {
 			event.preventDefault();
 			details.classList.toggle('visible');
 		});
+
+	// assign classes based on statistics
+	var numbers = preview.querySelectorAll('strong');
+	if (numbers.length > 0)
+		for (var i=0, count=numbers.length; i<count; i++) {
+			var item = numbers[i];
+			var value = item.innerText;
+			var base_class = i < 2 ? 'safety_' : 'polution_';
+
+			if (!isNaN(value))
+				item.classList.add(base_class + value);
+		}
 };
 
 
