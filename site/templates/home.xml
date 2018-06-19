@@ -32,15 +32,10 @@
 					template="kodkod/contact_form/generic.xml"
 					kodkod:type="contact_form"
 					/>
-				<!-- home link -->
+
+				<!-- Logo image -->
 				<a href="URL::make()" cms:eval="href">
-					<!-- logo image -->
-					<cms:module
-						name="gallery"
-						action="show_image"
-						text_id="logo"
-						template="kodkod/gallery/parts/simple.xml"
-						/>
+					<figure class="logo"/>
 				</a>
 			</section>
 
